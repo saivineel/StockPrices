@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stock Prices</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #5F9EA0;
+    color: #ffffff;
+    padding: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+background-color:#5F9EA0;
+color:white;
+border-color:4px solid white;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 200px;
+  
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid #5F9EA0;
+}
+#search {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+.menu{
+
+border:1px solid black;
+box-shadow:4px 8px 2px #5F9EA0;
+
+height:500px;
+
+}
+.stock{
+box-shadow:4px 8px 2px #5F9EA0;
+
+border:1px solid black;
+height:500px;
+}
+th{
+background-color: #5F9EA0;
+
+font-style:lucida calligraphy;
+}
+tr{
+background-color:	;
+
+border:1px solid black;
+box-shadow:4px 4px 8px 4px  #5F9EA0 ;
+font-style:lucida calligraphy;
+}
+.menu{
+
+background-color:;
+left-padding:5px;
+
+
+}
+.stock{
+left-padding:5px;
+}
+.banner{
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="header"><div class="part"><a href=index>Home</a></div>
+
+  <h1 align="center"> STOCK PRICE DETAILS</h1>
+</div>
+
+
+
+<div class="row"><br>
+
+<div class="col-6 menu">
+<h3 align="center"> STOCK DETAILS</h3>
+<br>
+<h4>"Oops!  Stock Name you have entered is not a valid one.Try again..."</h4>
+
+  
+</div>
+
+<div class="col-6 stock">
+
+  <form method='GET' action = "findstock">
+
+
+  <label for="fname">STOCK NAME:</label>
+  <input type="text" id="fname" name="stockname" placeholder=" Ex: HDFC "><br>
+  <span> *Note :Please Enter the complete name of the stock in Capital Letters</span>
+  
+  <button class="button button2">SUBMIT</button>
+    <h5></h5>
+
+</form>
+  
+</div>
+
+</div>
+
+</body>
+</html>
